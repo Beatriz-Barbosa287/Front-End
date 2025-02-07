@@ -80,17 +80,27 @@ switch (mês) {
 
 //limitável
 for (let i = 0; i <= 5; i++) {
-  console.log("Número:", i);
+  console.log("Iteração:" + i);
 }
 //ilimitável
-let continuar = true;
-let contador = 0;
-while (continuar) {
-  console.log(contador);
-  contador++; //++ aumetando em 1
-  if (contador>5){
-    continuar = false;
+let condition= true;
+let numero = 3;
+var contador = 0;
+while (condition) {
+    let sorteio =Math.random(5)
+    contador++
+  if (numero == sorteio){
+    console.log("Acertou com:" +contador+"tentivas")
+    condition= false;
   }
-  console.log(continuar)
+  console.log(condition)
 }
 
+
+//funções -- function 
+function saudacao(nome) {
+  return "Olá, " + nome;
+}
+
+let nome = "Maria";
+console.log(saudacao(nome));

@@ -20,3 +20,77 @@ nota2 = 9; //redefinindo
 const media = 7.5;//declarar
 // media = 8; // ao iniciar exibe ERRO- não permite redefinir 
 
+//operadores aritmetricos
+let a = 10;
+let b = 3;
+console.log(a+b);//13
+console.log(a-b);//7
+console.log(a*b);//30
+console.log(a/b);//3.33
+console.log(a%b); //1
+
+//Operadores Relacionais (Boolean)
+console.log(10 > 5);  // true
+console.log(10 === "10"); // false (tipos diferentes)
+console.log(10 == "10");  // true (conversão implícita)
+
+let idade = 20;
+console.log(idade > 18 && idade < 30); // true -E
+console.log(idade < 18 && idade > 65); // false -E
+console.log(idade < 18 || idade > 65); // false -OU
+console.log(idade > 18 || idade > 65); // -OU
+console.log(!false); // true -NÃO
+
+//Condicionais 
+//exemplo If Else 
+
+var idade = 18;
+
+if (idade >= 18) {
+  console.log("Maior de idade");
+} else {
+  console.log("Menor de idade");
+}
+
+
+//exemplo If Else Encadeado 
+let nota = 6.5;
+
+if (nota >=7){
+    console.log("Aprovado Queridão!");
+} else if (nota>=5){
+    console.log("Recuperação Queridão!");
+} else{
+    console.log("Reprovado, tadinho :(")
+}
+
+let mês = 3;
+switch (mês) {
+  case 1:
+    console.log("Janeiro");
+    break;
+  case 2:
+    console.log("Fevereiro");
+    break;
+  default:
+    console.log("Outro Mês")
+    break;
+}
+
+
+//limitável
+for (let i = 0; i <= 5; i++) {
+  console.log("Número:", i);
+}
+//ilimitável
+let continuar = true;
+let contador = 0;
+while (continuar) {
+  console.log(contador);
+  contador++; //++ aumetando em 1
+  if (contador>5){
+    continuar = false;
+  }
+  console.log(continuar)
+}
+
